@@ -1,0 +1,12 @@
+{
+  "name": "tsk",
+  "version": "1.0.0",
+  "description": "Write static HTML using JSX-style components. Zero runtime.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Boris Evstratov",
+  "license": "MIT"
+}
