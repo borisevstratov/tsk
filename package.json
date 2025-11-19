@@ -42,5 +42,8 @@
   "description": "Write static HTML using JSX.",
   "template": {
     "directory": "example"
+  },
+  "bin": {
+    "tsk-init": "./bin/init.js"
   }
 }

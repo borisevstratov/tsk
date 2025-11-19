@@ -30,10 +30,10 @@ Check the `/example` folder. This is all you basically need.
 ### One-command starter (recommended)
 
 ```bash
-npm create @borisevstratov/tsk@latest my-cool-site
+npx @borisevstratov/tsk init my-cool-site
 ```
 
-Then just 
+Then just
 
 ```bash
 cd my-cool-site
