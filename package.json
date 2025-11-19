@@ -1,7 +1,7 @@
 {
   "name": "tsk",
   "version": "1.0.0",
-  "description": "Write static HTML using JSX-style components. Zero runtime.",
+  "description": "Write static HTML using JSX. Zero runtime.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
