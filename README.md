@@ -1,6 +1,6 @@
 # Tiny Static Kit (TSK)
 
-Write type-safe static HTML sites using JSX and TypeScript.
+Develop static HTML sites using JSX and TypeScript.
 Zero runtime. Zero framework. Zero hydration.
 
 ## Why TSK?
