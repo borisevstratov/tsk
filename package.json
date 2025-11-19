@@ -1,12 +1,45 @@
 {
-  "name": "tsk",
+  "name": "@borisevstratov/tsk",
   "version": "1.0.0",
-  "description": "Write static HTML using JSX. Zero runtime.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
   },
-  "keywords": [],
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/borisevstratov/tsk"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "test": "node --import tsx --test tests/*.test.ts*"
+  },
+  "dependencies": {
+    "stringjsx": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.0.0"
+  },
+  "keywords": [
+    "static-site",
+    "jsx",
+    "html-generator",
+    "build"
+  ],
   "author": "Boris Evstratov",
-  "license": "MIT"
+  "license": "MIT",
+  "description": "Write static HTML using JSX."
 }
