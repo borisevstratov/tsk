@@ -44,6 +44,6 @@
     "directory": "example"
   },
   "bin": {
-    "tsk-init": "./bin/init.js"
+    "init": "./bin/init.js"
   }
 }

@@ -5,13 +5,14 @@ import { dirname, resolve } from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const target = process.argv[2] || "my-app";
+const argIndex = process.argv[2] === "init" ? 3 : 2;
+const target = process.argv[argIndex] || "my-app";
 const exampleDir = resolve(__dirname, "../example");
 
 try {
 	cpSync(exampleDir, target, { recursive: true });
-	console.log(`✔ Project created in "${target}" based on "example"`);
+	console.log(`[tsk] ✔ New project created in "${target}"`);
 } catch (err) {
-	console.error("✗ Failed to scaffold project:\n", err.message);
+	console.error("[tsk] ✗ Failed to scaffold a TSK project:\n", err.message);
 	process.exit(1);
 }

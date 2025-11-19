@@ -16,6 +16,11 @@ export async function generate(
 
 		const fullPath = path.join(outDir, route.path);
 		await writeFile(fullPath, result);
-		console.log("✔ Generated:", fullPath);
+		console.log(
+			"[tsk] ✔ Generated:",
+			fullPath,
+			"\t",
+			path.join(process.cwd(), fullPath),
+		);
 	}
 }
