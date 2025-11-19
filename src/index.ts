@@ -1,3 +1,8 @@
 export { generate } from "./generate";
 export { h } from "./h";
-export type { GenerateOptions, Route } from "./types";
+export type {
+	GenerateOptions,
+	JSXNode,
+	PropsWithChildren,
+	Route,
+} from "./types";
