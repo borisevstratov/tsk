@@ -25,7 +25,7 @@ Write it. Compile it. Throw it on any host. Collect profits.
 
 ## Usage
 
-Check the `/example` folder. This is all you basically need.
+Check the [example](./example/) folder. This is basically all you need.
 
 ### One-command starter (recommended)
 
