@@ -1,6 +1,6 @@
 # Tiny Static Kit (TSK)
 
-Write static HTML using JSX-style components.  
+Write type-safe static HTML sites using JSX and TypeScript.
 Zero runtime. Zero framework. Zero hydration.
 
 ## Why TSK?
@@ -17,11 +17,37 @@ I tried Svelte, Next.js, Remix, Astro, Gatsby… bro what the fuck are these fra
 
 It’s just a homepage, not Twitter!
 
-**TSK**:
+TSK lets you write normal TSX components (the React syntax you already know), then compiles them to clean, minified, zero-JavaScript HTML in <100 ms.
 
-- Write TSX (yeah, the React syntax you already know)
-- Compile to raw minified HTML
-- Throw it on any host
-- Done in <100 ms.
+Homepage. Portfolio. Landing page. Blog. Whatever.
 
-No framework. No runtime. No excuses.
+Write it. Compile it. Throw it on any host. Collect profits.
+
+## Usage
+
+Check the `/example` folder. This is all you basically need.
+
+### One-command starter (recommended)
+
+```bash
+npm create @borisevstratov/tsk@latest my-cool-site
+```
+
+Then just 
+
+```bash
+cd my-cool-site
+npm install
+npm run dev     # hot-reload while editing (outputs to ./dist by default)
+npm run build   # production build (use this one in your CI)
+```
+
+The artifacts will be placed in `my-cool-site/dist/*`.  
+Just open HTML in Chrome.
+
+## Credits
+
+Shoutouts to
+
+- [Odin](https://github.com/odinhb) -  created [stringjsx](https://github.com/dodoas/stringjsx) from vhtml
+- [Jason Miller](https://github.com/developit) - original creator of [vhtml](https://github.com/developit/vhtml)

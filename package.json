@@ -8,7 +8,8 @@
     ".": "./dist/index.js"
   },
   "files": [
-    "dist"
+    "dist",
+    "example"
   ],
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
@@ -38,5 +39,8 @@
   ],
   "author": "Boris Evstratov",
   "license": "MIT",
-  "description": "Write static HTML using JSX."
+  "description": "Write static HTML using JSX.",
+  "template": {
+    "directory": "example"
+  }
 }

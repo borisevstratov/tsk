@@ -6,3 +6,5 @@ test-dist/
 npm-debug.log*
 .npm
 *.tsbuildinfo
+
+example/package-lock.json

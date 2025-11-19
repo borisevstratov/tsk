@@ -1,0 +1,18 @@
+{
+  "name": "test-tsk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsx index.ts",
+    "dev": "tsx watch index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {},
+  "devDependencies": {
+    "@borisevstratov/tsk": "latest",
+    "tsx": "^4.20.6"
+  }
+}
